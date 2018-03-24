@@ -22,3 +22,6 @@ https://www.jetbrains.com/help/idea/creating-and-running-your-first-restful-web-
 # Validate Your App
 Go to Run and Select the name
 validate the project at `http://localhost:8080/Jax_RS_Application_war_exploded/app/hello`
+
+# Convert Non-Maven to Maven Project
+Select project heading > Right Click > Add Framework Support > select Maven and update pom.xml
