@@ -15,6 +15,12 @@ public class MyCustomMediaType {
     @GET
     @Produces(value= {MediaType.TEXT_PLAIN, "text/shortdate"})
     // Depending upon the header set, it will call the respective producer implementation...
+    //
+    // Calls :  DateMessageBodyWriter for Text/Plain and
+    //          ShortDateMessageBodyWriter for text/shortdate
+    //
+    // see @Produces annotations at this implementations...
+
     public Date hello(){
         return Calendar.getInstance().getTime();
     }
