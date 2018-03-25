@@ -13,7 +13,8 @@ import java.util.Date;
 @Path("/customMediaType")
 public class MyCustomMediaType {
     @GET
-    @Produces("text/shortdate")
+    @Produces(value= {MediaType.TEXT_PLAIN, "text/shortdate"})
+    // Depending upon the header set, it will call the respective producer implementation...
     public Date hello(){
         return Calendar.getInstance().getTime();
     }

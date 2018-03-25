@@ -15,7 +15,7 @@ public class MyDateConverterProvider implements ParamConverterProvider {
     @Override
     public <T> ParamConverter<T> getConverter(Class<T> rawType, Type genericType, Annotation[] annotations) {
         /*
-         * rawType : Type of the instance that needs conversion from String to
+         * rawType : Type of the instance that needs conversion from String to some class type...
          * genericType
          * annotations : list of annotations sent in request are mapped here
          */
