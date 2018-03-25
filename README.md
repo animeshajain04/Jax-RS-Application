@@ -25,3 +25,7 @@ validate the project at `http://localhost:8080/Jax_RS_Application_war_exploded/a
 
 # Convert Non-Maven to Maven Project
 Select project heading > Right Click > Add Framework Support > select Maven and update pom.xml
+
+# Custom DateConverterProvider
+Convert `today` to a `MyDate` instance.
+Test this at `http://localhost:8080/Jax_RS_Application_war_exploded/app/date/today`
